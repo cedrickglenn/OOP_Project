@@ -1,0 +1,34 @@
+﻿<Window x:Class="OOP_Project.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OOP_Project"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="350">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="300"/>
+        </Grid.ColumnDefinitions>
+        <Button Name="btnAddTransaction" 
+                Content ="Add Transaction" 
+                Click = "btnAddTransactionClick" 
+                FontSize="14"
+                Grid.Row="0" Margin="0,10,50,10" Grid.Column="1"/>
+        <Button Name="btnInventory" 
+                Content="Inventory" 
+                Click="btnInventoryClick" 
+                FontSize="14" 
+                Grid.Column="1"
+                Grid.Row="1" Margin="0,10,50,10"/>
+        <ListBox Name="lstTransactions" 
+                 Grid.Column="1"
+                 Grid.Row="2" Margin="0,10,50,-256"/>
+    </Grid>
+</Window>
